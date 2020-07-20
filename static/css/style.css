@@ -497,6 +497,7 @@ body {
   height: 40px;
   border-bottom: 1px solid #000;
   width: 82px;
+  border-radius: 0;
   outline: none; }
 
 .header {
