@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>K & M</title>
+    <link rel="stylesheet" href="static/css/reset.css">
+    <link rel="stylesheet" href="static/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width">
+</head>
+<body>
+    <div class="header">
+        <img src="static/img/logo.svg" alt="" class="logo">
+        <button class="toggle-menu" onclick="toggleMenu();">
+            <span class="menu-icon-wrapper">
+                <span class="top"></span>
+                <span class="middle"></span>
+                <span class="bottom"></span>
+            </span>
+        </button>
+    </div>
+    <div class="menu">
+        <a class="menu-link m--active" href="." onclick="setActiveMenuItem(event)">
+            <span class="link-text">Home</span>
+        </a>
+        <a class="menu-link" href="ons-verhaal.html" onclick="setActiveMenuItem(event)">
+            <span class="link-text">Ons verhaal</span>
+        </a>
+        <a class="menu-link" href="locatie.html" onclick="setActiveMenuItem(event)">
+            <span class="link-text">Locatie</span>
+        </a>
+        <a class="menu-link" href="het-team.html" onclick="setActiveMenuItem(event)">
+            <span class="link-text">Het team</span>
+        </a>
+        <a class="menu-link" href="rsvp.html" onclick="setActiveMenuItem(event)">
+            <span class="link-text">RSVP</span>
+        </a>
+        <a class="menu-link" href="praktische-informatie.html" onclick="setActiveMenuItem(event)">
+            <span class="link-text">Praktische informatie</span>
+        </a>
+        <a class="menu-link" href="cadeautips.html" onclick="setActiveMenuItem(event)">
+            <span class="link-text">Cadeautips</span>
+        </a>
+    </div>
+    <div class="flowers"></div>
+    <div class="content">
+        <div class="clip-text">
+            Save the<br />
+            date
+        </div>
+        <div class="names">Kayleigh & Mike</div>
+        <div class="clip-text clip-text_one">02.10.20</div>
+        <button class="btn-primary mt-80">
+            <span class="letter">R</span>
+            <span class="letter">S</span>
+            <span class="letter">V</span>
+            <span class="letter">P</span>
+        </button>
+        <div class="mike-kayleigh-wrapper mt-100">
+            <img src="static/img/mike-kayleigh.jpg" class="mike-kayleigh-img" alt="">
+        </div>
+    </div>
+    <footer class="footer">
+        <a href="" class="footer-link">Contact us</a>
+        <div class="mt-20">Kayleigh & Mike</div>
+        <div class="mt-20">ceremoniemeester | patricia</div>
+        <img class="mt-80" src="static/img/logo.svg" alt="" class="footer-logo">
+    </footer>
+    <script>
+        function toggleMenu() {
+            document.body.classList.toggle('menu-open');
+        }
+        function setActiveMenuItem(event) {
+            // event.preventDefault();
+            document.querySelector('.menu-link.m--active').classList.remove('m--active');
+            event.target.classList.add('m--active')
+        }
+    </script>
+</body>
+</html>

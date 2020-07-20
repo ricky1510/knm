@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>K & M</title>
+    <link rel="stylesheet" href="static/css/reset.css">
+    <link rel="stylesheet" href="static/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width">
+</head>
+<body>
+    <div class="header">
+        <img src="static/img/logo.svg" alt="" class="logo">
+        <button class="toggle-menu" onclick="toggleMenu();">
+            <span class="menu-icon-wrapper">
+                <span class="top"></span>
+                <span class="middle"></span>
+                <span class="bottom"></span>
+            </span>
+        </button>
+    </div>
+    <div class="menu">
+        <a class="menu-link m--active" href="." onclick="setActiveMenuItem(event)">
+            <span class="link-text">Home</span>
+        </a>
+        <a class="menu-link" href="ons-verhaal.html" onclick="setActiveMenuItem(event)">
+            <span class="link-text">Ons verhaal</span>
+        </a>
+        <a class="menu-link" href="locatie.html" onclick="setActiveMenuItem(event)">
+            <span class="link-text">Locatie</span>
+        </a>
+        <a class="menu-link" href="het-team.html" onclick="setActiveMenuItem(event)">
+            <span class="link-text">Het team</span>
+        </a>
+        <a class="menu-link" href="rsvp.html" onclick="setActiveMenuItem(event)">
+            <span class="link-text">RSVP</span>
+        </a>
+        <a class="menu-link" href="praktische-informatie.html" onclick="setActiveMenuItem(event)">
+            <span class="link-text">Praktische informatie</span>
+        </a>
+        <a class="menu-link" href="cadeautips.html" onclick="setActiveMenuItem(event)">
+            <span class="link-text">Cadeautips</span>
+        </a>
+    </div>
+    <div class="content mt-60 mb-100">
+        <h1 class="title">
+            Het team
+        </h1>
+        <h2 class="subtitle mb-30">
+            The people that make us shine!
+        </h2>
+        <div class="team-member mt-60">
+            <img class="team-member-img" src="https://via.placeholder.com/150" alt="">
+            <div class="team-member-name">Patricia Meles</div>
+            <div class="team-member-function">ceremoniemeester</div>
+            <p class="team-member-description">
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
+            </p>
+        </div>
+        <div class="team-member mt-60">
+            <img class="team-member-img" src="https://via.placeholder.com/150" alt="">
+            <div class="team-member-name">Rick Hanssen</div>
+            <div class="team-member-function">getuige</div>
+            <p class="team-member-description">
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
+            </p>
+        </div>
+        <div class="team-member mt-60">
+            <img class="team-member-img" src="https://via.placeholder.com/150" alt="">
+            <div class="team-member-name">Martin Hanssen</div>
+            <div class="team-member-function">getuige</div>
+            <p class="team-member-description">
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
+            </p>
+        </div>
+    </div>
+    <footer class="footer">
+        <a href="" class="footer-link">Contact us</a>
+        <div class="mt-20">Kayleigh & Mike</div>
+        <div class="mt-20">ceremoniemeester | patricia</div>
+        <img class="mt-80" src="static/img/logo.svg" alt="" class="footer-logo">
+    </footer>
+    <script>
+        function toggleMenu() {
+            document.body.classList.toggle('menu-open');
+        }
+        function setActiveMenuItem(event) {
+            // event.preventDefault();
+            document.querySelector('.menu-link.m--active').classList.remove('m--active');
+            event.target.classList.add('m--active')
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>K & M</title>
+    <link rel="stylesheet" href="static/css/reset.css">
+    <link rel="stylesheet" href="static/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width">
+</head>
+<body>
+    <div class="header">
+        <img src="static/img/logo.svg" alt="" class="logo">
+        <button class="toggle-menu" onclick="toggleMenu();">
+            <span class="menu-icon-wrapper">
+                <span class="top"></span>
+                <span class="middle"></span>
+                <span class="bottom"></span>
+            </span>
+        </button>
+    </div>
+    <div class="menu">
+        <a class="menu-link m--active" href="." onclick="setActiveMenuItem(event)">
+            <span class="link-text">Home</span>
+        </a>
+        <a class="menu-link" href="ons-verhaal.html" onclick="setActiveMenuItem(event)">
+            <span class="link-text">Ons verhaal</span>
+        </a>
+        <a class="menu-link" href="locatie.html" onclick="setActiveMenuItem(event)">
+            <span class="link-text">Locatie</span>
+        </a>
+        <a class="menu-link" href="het-team.html" onclick="setActiveMenuItem(event)">
+            <span class="link-text">Het team</span>
+        </a>
+        <a class="menu-link" href="rsvp.html" onclick="setActiveMenuItem(event)">
+            <span class="link-text">RSVP</span>
+        </a>
+        <a class="menu-link" href="praktische-informatie.html" onclick="setActiveMenuItem(event)">
+            <span class="link-text">Praktische informatie</span>
+        </a>
+        <a class="menu-link" href="cadeautips.html" onclick="setActiveMenuItem(event)">
+            <span class="link-text">Cadeautips</span>
+        </a>
+    </div>
+    <div class="content text-left mt-80 mb-100">
+        <h1 class="title">
+            Locatie
+        </h1>
+        <div>
+            <img src="static/img/marquette.png" class="marquette" alt="">
+        </div>
+        <div class="mt-50 mb-20">
+            Hotel & Chateau Marquette
+        </div>
+        <table class="mb-100">
+            <tr>
+                <td colspan="2">Marquettelaan 34</td>
+            </tr>
+            <tr>
+                <td class="pb-40" colspan="2">1968 JT Heemskerk</td>
+            </tr>
+            <tr>
+                <td>Telefoon:</td>
+                <td>+31(0)251-257025</td>
+            </tr>
+            <tr>
+                <td>E-mail:</td>
+                <td>info@hotel-marquette.com</td>
+            </tr>
+        </table>
+        <div class="subtitle">
+            Sweet dreams
+        </div>
+        <p class="mt-20">
+            Op het landgoed bevind zich tevens het hotel Château Marquette. Het hotel is op loopafstand en dus ideaal voor iedereen die na het feesten lekker wil ontspannen in een hotelkamer om de volgende dag te beginnen met een lekker ontbijtje.
+            <br><br>
+            Bij interesse geef dan bij het boeken door dat je bij ons hoort en krijg een mooie korting op een kamer.
+        </p>
+    </div>
+    <div class="flowers-bottom"></div>
+    <footer class="footer">
+        <a href="" class="footer-link">Contact us</a>
+        <div class="mt-20">Kayleigh & Mike</div>
+        <div class="mt-20">ceremoniemeester | patricia</div>
+        <img class="mt-80" src="static/img/logo.svg" alt="" class="footer-logo">
+    </footer>
+    <script>
+        function toggleMenu() {
+            document.body.classList.toggle('menu-open');
+        }
+        function setActiveMenuItem(event) {
+            // event.preventDefault();
+            document.querySelector('.menu-link.m--active').classList.remove('m--active');
+            event.target.classList.add('m--active')
+        }
+    </script>
+</body>
+</html>
